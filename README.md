@@ -127,7 +127,7 @@ This module shares a similar DAC output mechanism with the dynamic system but om
 | **Signal Processing** | Real-time FFT, DMA + ADC sampling, DAC sinusoidal output, PID loop control |
 | **Displays** | ST7789 (dual LCD with waveform/spectrum), LVGL touchscreen UI (static system), React + Chart.js (frontend visualization) |
 | **Communication** | UART (inter-MCU & Bluetooth), MQTT (via ESP8266), LAN8720 Ethernet (streaming ADC waveform) |
-| **Power & Motor** | TB6612 motor driver, DAC + speaker for acoustic output |
+| **Power & Motor** | TB6612 motor driver, 720 hollow-cup DC motor (wind simulation), DAC + speaker for acoustic output |
 | **Frontend Web** | React.js, MQTT.js, Chart.js – real-time UI with layer toggle, FFT & waveform overlay, zoom control |
 | **Security & Interaction** | OpenMV image pattern lock (A18B305), encoder-controlled frequency & phase sweep, mode toggle button |
 
