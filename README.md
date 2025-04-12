@@ -33,7 +33,7 @@ Two STM32 microcontrollers are used in tandem: one controls vehicle stability, a
 - PID control for upright posture and movement stabilization.
 
 **STM32-B: FFT spectrum analysis**
-- Captures environmental audio and computes a 128-point FFT.
+- Captures environmental audio and computes a FFT.
 - Uses SPI to alternate control of two ST7789 LCDs displaying:
   - Time-domain waveform
   - Frequency-domain spectrum (peak frequency and amplitude)
