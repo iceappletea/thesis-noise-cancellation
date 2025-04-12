@@ -94,8 +94,8 @@ A motorized fan assembly simulates wind turbine behavior and emits low-frequency
 - OpenMV performs image recognition to unlock the system using password pattern A18B305
 
 **Data Sources**
-- ESP8266 transmits FFT spectrum (128 points)
-- LAN8720 (Ethernet) transmits raw ADC waveform (128 points)
+- ESP8266 transmits FFT spectrum
+- LAN8720 (Ethernet) transmits raw ADC waveform
 
 **Frontend**
 - React-based interface merges FFT and ADC into a single interactive chart
