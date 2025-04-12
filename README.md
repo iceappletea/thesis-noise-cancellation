@@ -120,13 +120,15 @@ This module shares a similar DAC output mechanism with the dynamic system but om
 
 ## 🛠️ Key Technologies & Hardware
 
-| Category | Components / Technologies |
-|----------|---------------------------|
-| MCU | STM32F103, STM32F407, ESP8266, ESP32-WROOM |
-| Sensing | MPU6050, HC-SR04, OpenMV |
-| Display | ST7789, LVGL UI, React.js + Chart.js |
-| Communication | UART, MQTT, LAN8720 Ethernet |
-| DSP | 128-point FFT, PID Control |
-| Output | DAC-generated sine wave + speaker |
+| Category | Description |
+|----------|-------------|
+| **Microcontrollers** | STM32F103 (self-balancing, FFT), STM32F407 (DAC output), ESP8266 (MQTT communication), ESP32-WROOM-32E (motor/fan control) |
+| **Sensors** | MPU6050 (IMU for PID balance), HC-SR04 (ultrasonic backup), OpenMV (AprilTag visual tracking), Rotary Encoder |
+| **Signal Processing** | Real-time FFT, DMA + ADC sampling, DAC sinusoidal output, PID loop control |
+| **Displays** | ST7789 (dual LCD with waveform/spectrum), LVGL touchscreen UI (static system), React + Chart.js (frontend visualization) |
+| **Communication** | UART (inter-MCU & Bluetooth), MQTT (via ESP8266), LAN8720 Ethernet (streaming ADC waveform) |
+| **Power & Motor** | TB6612 motor driver, DAC + speaker for acoustic output |
+| **Frontend Web** | React.js, MQTT.js, Chart.js – real-time UI with layer toggle, FFT & waveform overlay, zoom control |
+| **Security & Interaction** | OpenMV image pattern lock (A18B305), encoder-controlled frequency & phase sweep, mode toggle button |
 
 > 📌 中文補充：系統整合了多種感測、顯示與通訊模組，並實作 FFT 與干涉控制核心邏輯。
